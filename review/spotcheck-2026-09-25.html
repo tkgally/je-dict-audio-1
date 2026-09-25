@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Audio spot check 2026-09-25</title>
+<style>
+:root { --bg:#fafafa; --fg:#1a1a1a; --muted:#666; --card:#fff; --border:#ddd;
+        --ok:#15803d; --err:#b91c1c; --unsure:#a16207; --accent:#2563eb; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#111; --fg:#eee; --muted:#aaa; --card:#1c1c1c; --border:#333;
+          --ok:#4ade80; --err:#f87171; --unsure:#facc15; --accent:#60a5fa; } }
+body { margin:0; background:var(--bg); color:var(--fg);
+       font:16px/1.5 system-ui,-apple-system,"Segoe UI","Hiragino Sans","Noto Sans JP",sans-serif; }
+main { max-width:860px; margin:0 auto; padding:16px; }
+h1 { font-size:1.4rem; margin:0.5rem 0; } h2 { font-size:1.15rem; margin:1.6rem 0 0.4rem; }
+.intro { color:var(--muted); } .intro p { margin:0.4rem 0; }
+.bar { position:sticky; top:0; background:var(--bg); padding:8px 0; border-bottom:1px solid var(--border);
+       display:flex; gap:8px; flex-wrap:wrap; align-items:center; z-index:1; }
+.bar button { font:inherit; padding:4px 10px; border:1px solid var(--border); border-radius:6px;
+              background:var(--card); color:var(--fg); cursor:pointer; }
+.count { color:var(--muted); font-size:0.9rem; }
+.clip { background:var(--card); border:1px solid var(--border); border-radius:8px; padding:10px 12px; margin:8px 0; }
+.clip .ja { font-size:1.15rem; } .clip .rd { color:var(--muted); font-size:0.9rem; }
+.clip .en { font-size:0.9rem; } .clip .meta { color:var(--muted); font-size:0.8rem; }
+.clip audio { width:100%; max-width:420px; height:36px; margin:6px 0; }
+.rate { display:flex; gap:6px; flex-wrap:wrap; align-items:center; }
+.rate button { font:inherit; min-width:44px; padding:2px 10px; border:1px solid var(--border);
+               border-radius:6px; background:var(--card); color:var(--fg); cursor:pointer; }
+.rate button.on[data-r=ok] { border-color:var(--ok); color:var(--ok); font-weight:600; }
+.rate button.on[data-r=err] { border-color:var(--err); color:var(--err); font-weight:600; }
+.rate button.on[data-r=unsure] { border-color:var(--unsure); color:var(--unsure); font-weight:600; }
+.rate input { flex:1; min-width:140px; font:inherit; font-size:0.9rem; padding:2px 6px;
+              border:1px solid var(--border); border-radius:6px; background:var(--card); color:var(--fg); }
+</style>
+</head>
+<body>
+<main>
+<h1>Audio spot check 2026-09-25</h1>
+<div class="intro"><p>Recordings the dictionary accepted since the last spot check, the riskiest first (a checker objected, or it took more than one attempt), then a random sample.</p><p>Listen to each and mark ✓ correct, ✗ wrong (any misread, missing, added or repeated word) or ? unsure; a comment helps with ✗. Then press <b>Download ratings</b> and upload the file to je-dict-1 at <code>audio/spotchecks/</code> (GitHub: Add file → Upload files). The next audio run adds your verdicts to the regression suite and re-records anything you marked wrong.</p></div>
+<div class="bar">
+  <button id="dl" type="button">Download ratings (JSON)</button>
+  <button id="cp" type="button">Copy ratings</button>
+  <span class="count" id="count"></span>
+</div>
+<div class="clip" data-key="00012_batsu_ex6">
+  <div class="ja" lang="ja">正しいものには丸を、間違っているものにはバツを付けてください。</div>
+  <div class="rd" lang="ja">ただしいものにはまるを、まちがっているものにはバツをつけてください。</div>
+  
+  <audio controls preload="none" src="https://tkgally.github.io/je-dict-audio-1/00000/00012_batsu_ex6.06f3705f.mp3"></audio>
+  <div class="meta">00012_batsu_ex6 · Charon · 2026-09-25 · a checker objected (kana:openai/gpt-audio-mini); accepted on attempt 2</div>
+  <div class="rate"><button type="button" data-r="ok" title="Correct">✓</button>
+  <button type="button" data-r="err" title="Wrong">✗</button>
+  <button type="button" data-r="unsure" title="Unsure">?</button>
+  <input type="text" placeholder="comment (optional)" aria-label="comment"></div>
+</div>
+<div class="clip" data-key="00051_ga_ex14">
+  <div class="ja" lang="ja">難しいですが、やってみます。</div>
+  <div class="rd" lang="ja">むずかしいですが、やってみます。</div>
+  
+  <audio controls preload="none" src="https://tkgally.github.io/je-dict-audio-1/00000/00051_ga_ex14.4ab839d3.mp3"></audio>
+  <div class="meta">00051_ga_ex14 · Kore · 2026-09-25 · a checker objected (kana:openai/gpt-audio-mini); accepted on attempt 2</div>
+  <div class="rate"><button type="button" data-r="ok" title="Correct">✓</button>
+  <button type="button" data-r="err" title="Wrong">✗</button>
+  <button type="button" data-r="unsure" title="Unsure">?</button>
+  <input type="text" placeholder="comment (optional)" aria-label="comment"></div>
+</div>
+<div class="clip" data-key="00146_kajitsu_ex7">
+  <div class="ja" lang="ja">果実酒を漬けています。</div>
+  <div class="rd" lang="ja">かじつしゅをつけています。</div>
+  
+  <audio controls preload="none" src="https://tkgally.github.io/je-dict-audio-1/00000/00146_kajitsu_ex7.294f3860.mp3"></audio>
+  <div class="meta">00146_kajitsu_ex7 · Kore · 2026-09-25 · a checker objected (kana:openai/gpt-audio-mini); accepted on attempt 2</div>
+  <div class="rate"><button type="button" data-r="ok" title="Correct">✓</button>
+  <button type="button" data-r="err" title="Wrong">✗</button>
+  <button type="button" data-r="unsure" title="Unsure">?</button>
+  <input type="text" placeholder="comment (optional)" aria-label="comment"></div>
+</div>
+<div class="clip" data-key="00006_aru_ex2">
+  <div class="ja" lang="ja">机の上に本がある。</div>
+  <div class="rd" lang="ja">つくえのうえにほんがある。</div>
+  
+  <audio controls preload="none" src="https://tkgally.github.io/je-dict-audio-1/00000/00006_aru_ex2.1666a467.mp3"></audio>
+  <div class="meta">00006_aru_ex2 · Charon · 2026-09-25 · a checker objected (kana:openai/gpt-audio-mini)</div>
+  <div class="rate"><button type="button" data-r="ok" title="Correct">✓</button>
+  <button type="button" data-r="err" title="Wrong">✗</button>
+  <button type="button" data-r="unsure" title="Unsure">?</button>
+  <input type="text" placeholder="comment (optional)" aria-label="comment"></div>
+</div>
+<div class="clip" data-key="00012_batsu_ex4">
+  <div class="ja" lang="ja">テストで三つバツが付いた。</div>
+  <div class="rd" lang="ja">テストでさんつバツがついた。</div>
+  
+  <audio controls preload="none" src="https://tkgally.github.io/je-dict-audio-1/00000/00012_batsu_ex4.064b1c04.mp3"></audio>
+  <div class="meta">00012_batsu_ex4 · Charon · 2026-09-25 · a checker objected (kana:thinkingmachines/inkling)</div>
+  <div class="rate"><button type="button" data-r="ok" title="Correct">✓</button>
+  <button type="button" data-r="err" title="Wrong">✗</button>
+  <button type="button" data-r="unsure" title="Unsure">?</button>
+  <input type="text" placeholder="comment (optional)" aria-label="comment"></div>
+</div>
+<div class="clip" data-key="00025_chiisai_ex6">
+  <div class="ja" lang="ja">声が小さい。</div>
+  <div class="rd" lang="ja">こえがちいさい。</div>
+  
+  <audio controls preload="none" src="https://tkgally.github.io/je-dict-audio-1/00000/00025_chiisai_ex6.ccbea8a0.mp3"></audio>
+  <div class="meta">00025_chiisai_ex6 · Kore · 2026-09-25 · a checker objected (kana:openai/gpt-audio-mini)</div>
+  <div class="rate"><button type="button" data-r="ok" title="Correct">✓</button>
+  <button type="button" data-r="err" title="Wrong">✗</button>
+  <button type="button" data-r="unsure" title="Unsure">?</button>
+  <input type="text" placeholder="comment (optional)" aria-label="comment"></div>
+</div>
+<div class="clip" data-key="00025_chiisai_ex7">
+  <div class="ja" lang="ja">もっと小さい声で話して。</div>
+  <div class="rd" lang="ja">もっとちいさいこえではなして。</div>
+  
+  <audio controls preload="none" src="https://tkgally.github.io/je-dict-audio-1/00000/00025_chiisai_ex7.450260cb.mp3"></audio>
+  <div class="meta">00025_chiisai_ex7 · Charon · 2026-09-25 · a checker objected (kana:openai/gpt-audio-mini)</div>
+  <div class="rate"><button type="button" data-r="ok" title="Correct">✓</button>
+  <button type="button" data-r="err" title="Wrong">✗</button>
+  <button type="button" data-r="unsure" title="Unsure">?</button>
+  <input type="text" placeholder="comment (optional)" aria-label="comment"></div>
+</div>
+<div class="clip" data-key="00025_chiisai_ex8">
+  <div class="ja" lang="ja">テレビの音が小さくて聞こえない。</div>
+  <div class="rd" lang="ja">テレビのおとがちいさくてきこえない。</div>
+  
+  <audio controls preload="none" src="https://tkgally.github.io/je-dict-audio-1/00000/00025_chiisai_ex8.d0ce186a.mp3"></audio>
+  <div class="meta">00025_chiisai_ex8 · Kore · 2026-09-25 · a checker objected (kana:openai/gpt-audio-mini)</div>
+  <div class="rate"><button type="button" data-r="ok" title="Correct">✓</button>
+  <button type="button" data-r="err" title="Wrong">✗</button>
+  <button type="button" data-r="unsure" title="Unsure">?</button>
+  <input type="text" placeholder="comment (optional)" aria-label="comment"></div>
+</div>
+<div class="clip" data-key="00025_chiisai_ex9">
+  <div class="ja" lang="ja">赤ちゃんが寝ているから、小さい声で話してください。</div>
+  <div class="rd" lang="ja">あかちゃんがねているから、ちいさいこえではなしてください。</div>
+  
+  <audio controls preload="none" src="https://tkgally.github.io/je-dict-audio-1/00000/00025_chiisai_ex9.e77a5606.mp3"></audio>
+  <div class="meta">00025_chiisai_ex9 · Charon · 2026-09-25 · a checker objected (kana:openai/gpt-audio-mini)</div>
+  <div class="rate"><button type="button" data-r="ok" title="Correct">✓</button>
+  <button type="button" data-r="err" title="Wrong">✗</button>
+  <button type="button" data-r="unsure" title="Unsure">?</button>
+  <input type="text" placeholder="comment (optional)" aria-label="comment"></div>
+</div>
+<div class="clip" data-key="00033_dakedo_ex5">
+  <div class="ja" lang="ja">好きだ。だけど、言えない。</div>
+  <div class="rd" lang="ja">すきだ。だけど、いえない。</div>
+  
+  <audio controls preload="none" src="https://tkgally.github.io/je-dict-audio-1/00000/00033_dakedo_ex5.7c126f61.mp3"></audio>
+  <div class="meta">00033_dakedo_ex5 · Charon · 2026-09-25 · a checker objected (kana:openai/gpt-audio-mini)</div>
+  <div class="rate"><button type="button" data-r="ok" title="Correct">✓</button>
+  <button type="button" data-r="err" title="Wrong">✗</button>
+  <button type="button" data-r="unsure" title="Unsure">?</button>
+  <input type="text" placeholder="comment (optional)" aria-label="comment"></div>
+</div>
+<div class="clip" data-key="00051_ga_ex2">
+  <div class="ja" lang="ja">誰が来ましたか。</div>
+  <div class="rd" lang="ja">だれがきましたか。</div>
+  
+  <audio controls preload="none" src="https://tkgally.github.io/je-dict-audio-1/00000/00051_ga_ex2.4e0d375c.mp3"></audio>
+  <div class="meta">00051_ga_ex2 · Kore · 2026-09-25 · a checker objected (kana:google/gemini-3.8-flash)</div>
+  <div class="rate"><button type="button" data-r="ok" title="Correct">✓</button>
+  <button type="button" data-r="err" title="Wrong">✗</button>
+  <button type="button" data-r="unsure" title="Unsure">?</button>
+  <input type="text" placeholder="comment (optional)" aria-label="comment"></div>
+</div>
+<div class="clip" data-key="00051_ga_ex7">
+  <div class="ja" lang="ja">日本語が分かる。</div>
+  <div class="rd" lang="ja">にほんごがわかる。</div>
+  
+  <audio controls preload="none" src="https://tkgally.github.io/je-dict-audio-1/00000/00051_ga_ex7.7662eb8d.mp3"></audio>
+  <div class="meta">00051_ga_ex7 · Charon · 2026-09-25 · a checker objected (kana:openai/gpt-audio-mini)</div>
+  <div class="rate"><button type="button" data-r="ok" title="Correct">✓</button>
+  <button type="button" data-r="err" title="Wrong">✗</button>
+  <button type="button" data-r="unsure" title="Unsure">?</button>
+  <input type="text" placeholder="comment (optional)" aria-label="comment"></div>
+</div>
+<div class="clip" data-key="00055_gakkou_ex5">
+  <div class="ja" lang="ja">子供たちは毎日学校に行って、友達と一緒に勉強したり遊んだりする。</div>
+  <div class="rd" lang="ja">こどもたちはまいにちがっこうにいって、ともだちといっしょにべんきょうしたりあそんだりする。</div>
+  
+  <audio controls preload="none" src="https://tkgally.github.io/je-dict-audio-1/00000/00055_gakkou_ex5.d9dd613b.mp3"></audio>
+  <div class="meta">00055_gakkou_ex5 · Charon · 2026-09-25 · a checker objected (kana:google/gemini-3.8-flash)</div>
+  <div class="rate"><button type="button" data-r="ok" title="Correct">✓</button>
+  <button type="button" data-r="err" title="Wrong">✗</button>
+  <button type="button" data-r="unsure" title="Unsure">?</button>
+  <input type="text" placeholder="comment (optional)" aria-label="comment"></div>
+</div>
+<div class="clip" data-key="00072_gomen_ex1">
+  <div class="ja" lang="ja">ごめん！</div>
+  <div class="rd" lang="ja">ごめん！</div>
+  
+  <audio controls preload="none" src="https://tkgally.github.io/je-dict-audio-1/00000/00072_gomen_ex1.945d9b12.mp3"></audio>
+  <div class="meta">00072_gomen_ex1 · Kore · 2026-09-25 · a checker objected (kana:openai/gpt-audio-mini)</div>
+  <div class="rate"><button type="button" data-r="ok" title="Correct">✓</button>
+  <button type="button" data-r="err" title="Wrong">✗</button>
+  <button type="button" data-r="unsure" title="Unsure">?</button>
+  <input type="text" placeholder="comment (optional)" aria-label="comment"></div>
+</div>
+<div class="clip" data-key="00072_gomen_ex12">
+  <div class="ja" lang="ja">嘘をつくのはごめんだ。</div>
+  <div class="rd" lang="ja">うそをつくのはごめんだ。</div>
+  
+  <audio controls preload="none" src="https://tkgally.github.io/je-dict-audio-1/00000/00072_gomen_ex12.5581778e.mp3"></audio>
+  <div class="meta">00072_gomen_ex12 · Charon · 2026-09-25 · a checker objected (kana:openai/gpt-audio-mini)</div>
+  <div class="rate"><button type="button" data-r="ok" title="Correct">✓</button>
+  <button type="button" data-r="err" title="Wrong">✗</button>
+  <button type="button" data-r="unsure" title="Unsure">?</button>
+  <input type="text" placeholder="comment (optional)" aria-label="comment"></div>
+</div>
+<div class="clip" data-key="00072_gomen_ex2">
+  <div class="ja" lang="ja">ごめんね、待った?</div>
+  <div class="rd" lang="ja">ごめんね、まった?</div>
+  
+  <audio controls preload="none" src="https://tkgally.github.io/je-dict-audio-1/00000/00072_gomen_ex2.1f888731.mp3"></audio>
+  <div class="meta">00072_gomen_ex2 · Charon · 2026-09-25 · accepted on attempt 3</div>
+  <div class="rate"><button type="button" data-r="ok" title="Correct">✓</button>
+  <button type="button" data-r="err" title="Wrong">✗</button>
+  <button type="button" data-r="unsure" title="Unsure">?</button>
+  <input type="text" placeholder="comment (optional)" aria-label="comment"></div>
+</div>
+<div class="clip" data-key="00072_gomen_ex4">
+  <div class="ja" lang="ja">あ、ごめん、足踏んだ?</div>
+  <div class="rd" lang="ja">あ、ごめん、あしふんだ?</div>
+  
+  <audio controls preload="none" src="https://tkgally.github.io/je-dict-audio-1/00000/00072_gomen_ex4.c51e6bb6.mp3"></audio>
+  <div class="meta">00072_gomen_ex4 · Charon · 2026-09-25 · a checker objected (kana:thinkingmachines/inkling)</div>
+  <div class="rate"><button type="button" data-r="ok" title="Correct">✓</button>
+  <button type="button" data-r="err" title="Wrong">✗</button>
+  <button type="button" data-r="unsure" title="Unsure">?</button>
+  <input type="text" placeholder="comment (optional)" aria-label="comment"></div>
+</div>
+<div class="clip" data-key="00072_gomen_ex6">
+  <div class="ja" lang="ja">ごめんください。</div>
+  <div class="rd" lang="ja">ごめんください。</div>
+  
+  <audio controls preload="none" src="https://tkgally.github.io/je-dict-audio-1/00000/00072_gomen_ex6.12c3026b.mp3"></audio>
+  <div class="meta">00072_gomen_ex6 · Charon · 2026-09-25 · a checker objected (kana:openai/gpt-audio-mini)</div>
+  <div class="rate"><button type="button" data-r="ok" title="Correct">✓</button>
+  <button type="button" data-r="err" title="Wrong">✗</button>
+  <button type="button" data-r="unsure" title="Unsure">?</button>
+  <input type="text" placeholder="comment (optional)" aria-label="comment"></div>
+</div>
+<div class="clip" data-key="00079_ha_ex2">
+  <div class="ja" lang="ja">これは何ですか。</div>
+  <div class="rd" lang="ja">これはなんですか。</div>
+  
+  <audio controls preload="none" src="https://tkgally.github.io/je-dict-audio-1/00000/00079_ha_ex2.b6d45fb8.mp3"></audio>
+  <div class="meta">00079_ha_ex2 · Kore · 2026-09-25 · a checker objected (kana:openai/gpt-audio-mini)</div>
+  <div class="rate"><button type="button" data-r="ok" title="Correct">✓</button>
+  <button type="button" data-r="err" title="Wrong">✗</button>
+  <button type="button" data-r="unsure" title="Unsure">?</button>
+  <input type="text" placeholder="comment (optional)" aria-label="comment"></div>
+</div>
+<div class="clip" data-key="00079_ha_ex6">
+  <div class="ja" lang="ja">これは好きだ。</div>
+  <div class="rd" lang="ja">これはすきだ。</div>
+  
+  <audio controls preload="none" src="https://tkgally.github.io/je-dict-audio-1/00000/00079_ha_ex6.0f6e9f16.mp3"></audio>
+  <div class="meta">00079_ha_ex6 · Kore · 2026-09-25 · a checker objected (kana:openai/gpt-audio-mini)</div>
+  <div class="rate"><button type="button" data-r="ok" title="Correct">✓</button>
+  <button type="button" data-r="err" title="Wrong">✗</button>
+  <button type="button" data-r="unsure" title="Unsure">?</button>
+  <input type="text" placeholder="comment (optional)" aria-label="comment"></div>
+</div>
+<div class="clip" data-key="00337_otokonohito_ex3">
+  <div class="ja" lang="ja">背の高い男の人が入ってきた。</div>
+  <div class="rd" lang="ja">せのたかいおとこのひとがはいってきた。</div>
+  
+  <audio controls preload="none" src="https://tkgally.github.io/je-dict-audio-1/00000/00337_otokonohito_ex3.e083a215.mp3"></audio>
+  <div class="meta">00337_otokonohito_ex3 · Charon · 2026-09-25</div>
+  <div class="rate"><button type="button" data-r="ok" title="Correct">✓</button>
+  <button type="button" data-r="err" title="Wrong">✗</button>
+  <button type="button" data-r="unsure" title="Unsure">?</button>
+  <input type="text" placeholder="comment (optional)" aria-label="comment"></div>
+</div>
+<div class="clip" data-key="00079_ha_ex5">
+  <div class="ja" lang="ja">象は鼻が長い。これはみんな知っていることだ。</div>
+  <div class="rd" lang="ja">ぞうははながながい。これはみんなしっていることだ。</div>
+  
+  <audio controls preload="none" src="https://tkgally.github.io/je-dict-audio-1/00000/00079_ha_ex5.50d34dfd.mp3"></audio>
+  <div class="meta">00079_ha_ex5 · Charon · 2026-09-25</div>
+  <div class="rate"><button type="button" data-r="ok" title="Correct">✓</button>
+  <button type="button" data-r="err" title="Wrong">✗</button>
+  <button type="button" data-r="unsure" title="Unsure">?</button>
+  <input type="text" placeholder="comment (optional)" aria-label="comment"></div>
+</div>
+<div class="clip" data-key="00335_ookii_ex1">
+  <div class="ja" lang="ja">大きい犬だ。</div>
+  <div class="rd" lang="ja">おおきいいぬだ。</div>
+  
+  <audio controls preload="none" src="https://tkgally.github.io/je-dict-audio-1/00000/00335_ookii_ex1.f9985843.mp3"></audio>
+  <div class="meta">00335_ookii_ex1 · Charon · 2026-09-25</div>
+  <div class="rate"><button type="button" data-r="ok" title="Correct">✓</button>
+  <button type="button" data-r="err" title="Wrong">✗</button>
+  <button type="button" data-r="unsure" title="Unsure">?</button>
+  <input type="text" placeholder="comment (optional)" aria-label="comment"></div>
+</div>
+<div class="clip" data-key="00314_ni_ex20">
+  <div class="ja" lang="ja">誕生日に友達にプレゼントをもらって、とても嬉しかった。</div>
+  <div class="rd" lang="ja">たんじょうびにともだちにプレゼントをもらって、とてもうれしかった。</div>
+  
+  <audio controls preload="none" src="https://tkgally.github.io/je-dict-audio-1/00000/00314_ni_ex20.381dd1cd.mp3"></audio>
+  <div class="meta">00314_ni_ex20 · Charon · 2026-09-25</div>
+  <div class="rate"><button type="button" data-r="ok" title="Correct">✓</button>
+  <button type="button" data-r="err" title="Wrong">✗</button>
+  <button type="button" data-r="unsure" title="Unsure">?</button>
+  <input type="text" placeholder="comment (optional)" aria-label="comment"></div>
+</div>
+<div class="clip" data-key="00055_gakkou_ex1">
+  <div class="ja" lang="ja">学校に行く。</div>
+  <div class="rd" lang="ja">がっこうにいく。</div>
+  
+  <audio controls preload="none" src="https://tkgally.github.io/je-dict-audio-1/00000/00055_gakkou_ex1.13dca8aa.mp3"></audio>
+  <div class="meta">00055_gakkou_ex1 · Charon · 2026-09-25</div>
+  <div class="rate"><button type="button" data-r="ok" title="Correct">✓</button>
+  <button type="button" data-r="err" title="Wrong">✗</button>
+  <button type="button" data-r="unsure" title="Unsure">?</button>
+  <input type="text" placeholder="comment (optional)" aria-label="comment"></div>
+</div>
+<div class="clip" data-key="00254_kuru_ex10">
+  <div class="ja" lang="ja">ずっと練習してきたので、今は上手に話せるようになった。</div>
+  <div class="rd" lang="ja">ずっとれんしゅうしてきたので、いまはじょうずにはなせるようになった。</div>
+  
+  <audio controls preload="none" src="https://tkgally.github.io/je-dict-audio-1/00000/00254_kuru_ex10.d2ca2f73.mp3"></audio>
+  <div class="meta">00254_kuru_ex10 · Charon · 2026-09-25</div>
+  <div class="rate"><button type="button" data-r="ok" title="Correct">✓</button>
+  <button type="button" data-r="err" title="Wrong">✗</button>
+  <button type="button" data-r="unsure" title="Unsure">?</button>
+  <input type="text" placeholder="comment (optional)" aria-label="comment"></div>
+</div>
+<div class="clip" data-key="00395_suupu_ex4">
+  <div class="ja" lang="ja">寒い日は温かいスープが体を温めてくれる。</div>
+  <div class="rd" lang="ja">さむいひはあたたかいスープがからだをあたためてくれる。</div>
+  
+  <audio controls preload="none" src="https://tkgally.github.io/je-dict-audio-1/00000/00395_suupu_ex4.785b94b4.mp3"></audio>
+  <div class="meta">00395_suupu_ex4 · Kore · 2026-09-25</div>
+  <div class="rate"><button type="button" data-r="ok" title="Correct">✓</button>
+  <button type="button" data-r="err" title="Wrong">✗</button>
+  <button type="button" data-r="unsure" title="Unsure">?</button>
+  <input type="text" placeholder="comment (optional)" aria-label="comment"></div>
+</div>
+<div class="clip" data-key="00314_ni_ex12">
+  <div class="ja" lang="ja">七時に起きる。</div>
+  <div class="rd" lang="ja">しちじにおきる。</div>
+  
+  <audio controls preload="none" src="https://tkgally.github.io/je-dict-audio-1/00000/00314_ni_ex12.3fd17ef9.mp3"></audio>
+  <div class="meta">00314_ni_ex12 · Charon · 2026-09-25</div>
+  <div class="rate"><button type="button" data-r="ok" title="Correct">✓</button>
+  <button type="button" data-r="err" title="Wrong">✗</button>
+  <button type="button" data-r="unsure" title="Unsure">?</button>
+  <input type="text" placeholder="comment (optional)" aria-label="comment"></div>
+</div>
+<div class="clip" data-key="00392_suru_ex2">
+  <div class="ja" lang="ja">勉強しています。</div>
+  <div class="rd" lang="ja">べんきょうしています。</div>
+  
+  <audio controls preload="none" src="https://tkgally.github.io/je-dict-audio-1/00000/00392_suru_ex2.49f136c6.mp3"></audio>
+  <div class="meta">00392_suru_ex2 · Charon · 2026-09-25</div>
+  <div class="rate"><button type="button" data-r="ok" title="Correct">✓</button>
+  <button type="button" data-r="err" title="Wrong">✗</button>
+  <button type="button" data-r="unsure" title="Unsure">?</button>
+  <input type="text" placeholder="comment (optional)" aria-label="comment"></div>
+</div>
+<div class="clip" data-key="00031_daga_ex4">
+  <div class="ja" lang="ja">時間はある。だが、やる気がない。</div>
+  <div class="rd" lang="ja">じかんはある。だが、やるきがない。</div>
+  
+  <audio controls preload="none" src="https://tkgally.github.io/je-dict-audio-1/00000/00031_daga_ex4.1b1a4c67.mp3"></audio>
+  <div class="meta">00031_daga_ex4 · Kore · 2026-09-25</div>
+  <div class="rate"><button type="button" data-r="ok" title="Correct">✓</button>
+  <button type="button" data-r="err" title="Wrong">✗</button>
+  <button type="button" data-r="unsure" title="Unsure">?</button>
+  <input type="text" placeholder="comment (optional)" aria-label="comment"></div>
+</div>
+</main>
+<script>
+(function() {
+  var PAGE = "spotcheck-2026-09-25";
+  var KEY = 'audio-ratings:' + PAGE;
+  var ratings = {};
+  try { ratings = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch (e) { ratings = {}; }
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(ratings)); } catch (e) {} count(); }
+  function count() {
+    var n = document.querySelectorAll('.clip').length, done = 0;
+    for (var k in ratings) if (ratings[k].r) done++;
+    document.getElementById('count').textContent = done + ' of ' + n + ' rated';
+  }
+  function paint(clip) {
+    var r = ratings[clip.dataset.key] || {};
+    clip.querySelectorAll('.rate button').forEach(function(b) { b.classList.toggle('on', b.dataset.r === r.r); });
+    var inp = clip.querySelector('.rate input'); if (inp) inp.value = r.c || '';
+  }
+  document.querySelectorAll('.clip').forEach(function(clip) {
+    paint(clip);
+    clip.querySelectorAll('.rate button').forEach(function(b) {
+      b.addEventListener('click', function() {
+        var k = clip.dataset.key, cur = ratings[k] || {};
+        cur.r = (cur.r === b.dataset.r) ? '' : b.dataset.r; ratings[k] = cur; paint(clip); save();
+      });
+    });
+    var inp = clip.querySelector('.rate input');
+    if (inp) inp.addEventListener('input', function() {
+      var k = clip.dataset.key, cur = ratings[k] || {}; cur.c = inp.value; ratings[k] = cur; save();
+    });
+    var au = clip.querySelector('audio');
+    if (au) au.addEventListener('play', function() {
+      document.querySelectorAll('audio').forEach(function(o) { if (o !== au) o.pause(); });
+    });
+  });
+  function payload() {
+    return JSON.stringify({page: PAGE, exported: new Date().toISOString(), ratings: ratings}, null, 1);
+  }
+  document.getElementById('dl').addEventListener('click', function() {
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob([payload()], {type: 'application/json'}));
+    a.download = 'ratings_' + PAGE + '.json'; document.body.appendChild(a); a.click(); a.remove();
+  });
+  document.getElementById('cp').addEventListener('click', function() {
+    var t = payload();
+    if (navigator.clipboard) navigator.clipboard.writeText(t).then(function() { alert('Copied.'); });
+    else prompt('Copy this:', t);
+  });
+  count();
+})();
+</script>
+</body>
+</html>
